@@ -1,0 +1,47 @@
+.header h1{
+    color: var(--black);
+    margin-top: 0;
+}
+
+.right-side h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content {
+    margin: 2rem 14rem 0 14rem;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.left-side {
+    border-right: 1px solid var(--gray);
+    flex: 3;
+}
+
+.header {
+    padding-right: 1.5rem;
+}
+
+.right-side {
+    flex: 1;
+}
+
+h2 {
+    width: 100%; 
+    text-align: left; 
+    border-bottom: 1px solid var(--gray); 
+    line-height: 0.1em;
+    margin: 30px 0 0;
+    color: var(--black); 
+ } 
+
+ h2 span { 
+    background:#fff; 
+    padding-right: 30px; 
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}

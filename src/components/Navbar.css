@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     column-gap: 2.5rem;    
-    padding: 0 15rem;
+    padding: 0 14rem;
     justify-content: space-between;
 }
 
@@ -13,7 +13,7 @@
     font-size: 25px;
 }
 
-h1,p,a, button {
+h1, button {
     color: white;
 }
 
