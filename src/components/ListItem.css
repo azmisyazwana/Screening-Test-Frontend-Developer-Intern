@@ -1,0 +1,24 @@
+
+li {
+    display: flex;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.list-number {
+    text-align: center;
+    align-items: center;
+    padding: 0 .5rem;
+    height: 25px;
+    color: white;
+    background: var(--brown);
+    margin-right: .5rem;
+}
+
+.list-text:hover {
+    text-decoration: underline;
+}
+
+.list-text {
+    margin: 0;
+}
