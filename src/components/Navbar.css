@@ -3,9 +3,10 @@
     height: 3.5rem;
     display: flex;
     align-items: center;
-    column-gap: 2.5rem;    
+    column-gap: 2.5rem;  
+    justify-content: space-between;  
     padding: 0 14rem;
-    justify-content: space-between;
+  
 }
 
 .title {
@@ -20,6 +21,7 @@ h1, button {
 .search-bar {
     width: 52%;
     height: 32px;
+    position: relative;
 }
 
 .search {
@@ -33,8 +35,8 @@ h1, button {
 
 .search-icon {
     position: absolute;
-    top: 22px;
-    right: 530px;
+    top: 12px;
+    right: 0px;
     cursor: pointer;
 }
 
@@ -56,7 +58,7 @@ button {
     width: 5rem;
 }
 
-button:hover, button:focus{
+.btn-navbar:hover, .btn-navbar:focus{
     background: var(--black);
 }
 
@@ -84,4 +86,88 @@ button:hover, button:focus{
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  .menu-btn {
+    display: none;
+}
+
+  @media only screen and (max-width: 1080px) {
+    .mobile-menu{
+        display: none;
+    }
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .menu-btn {
+        display: block;
+        background: white;
+        padding: 0.3rem .6rem;
+        cursor: pointer;
+    }
+
+
+    .menu-float{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: var(--black);
+        width: 40%;
+        height: 1000%;
+        top: -58%;
+        right: -63%;
+        text-align: end;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        margin: 1rem 2rem
+    }
+
+    .search{
+        position: relative;
+    left: 75%;
+    }
+
+    .search-icon-m{
+        position: absolute;
+        left: 168%;
+        cursor: pointer;
+        top: 12px;
+
+    }
+
+    .btn-menu{
+        border: none;
+        cursor: pointer;
+        /* height: 80%; */
+        width: 70%;
+        position: relative;
+        left: 30%;
+        text-align: end;
+    }
+
+    button{
+        height: 20px;
+        background: none;
+    }
+
+    .link-btn{
+        flex-direction: column;
+    }
+
+    .category {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a{
+        display: block;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
   }

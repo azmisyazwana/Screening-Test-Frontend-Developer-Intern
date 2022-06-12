@@ -27,16 +27,16 @@
     flex: 1;
 }
 
-h2 {
+h2, .add-comment {
     width: 100%; 
     text-align: left; 
     border-bottom: 1px solid var(--gray); 
     line-height: 0.1em;
-    margin: 30px 0 0;
+    margin: 30px 0 30px;
     color: var(--black); 
  } 
 
- h2 span { 
+ h2 span, .add-comment span { 
     background:#fff; 
     padding-right: 30px; 
 }
@@ -45,3 +45,18 @@ ol {
     list-style: none;
     padding: 0;
 }
+
+@media only screen and (max-width: 1080px) {
+    .left-side {
+        border: none;
+    }
+
+    .content{
+        display: block;
+        margin: 1rem 1rem 0 1rem;
+    }
+  }
+
+
+
+
